@@ -1,0 +1,18 @@
+[time] lgbm の探索 509.0 秒
+[time] xgb の探索 182.4 秒
+[time] cat の探索 1470.6 秒
+■ 探索の結果（各 20 試行）
+ライブラリ  完了  枝刈り  CV の LogLoss（探索の最良）
+      lgbm    15       5                      0.04366
+       xgb    13       7                      0.04369
+       cat    16       4                      0.04364
+
+■ 最良の構成の測り直し（検証 day 133〜146、種 5 つ、合成データ）
+ライブラリ  LogLoss 平均  LogLoss 標準偏差  AUC 平均  AUC 標準偏差
+      lgbm       0.04170           0.00005   0.86402       0.00061
+       xgb       0.04178           0.00005   0.86273       0.00020
+       cat       0.04183           0.00006   0.86308       0.00033
+
+lgbm {'learning_rate': 0.0357, 'subsample': 0.8249, 'colsample_bytree': 0.6279, 'n_estimators': 750, 'num_leaves': 38, 'min_child_samples': 20, 'reg_lambda': 3.0199, 'subsample_freq': 1}
+xgb {'learning_rate': 0.0357, 'subsample': 0.8249, 'colsample_bytree': 0.6279, 'n_estimators': 750, 'max_depth': 5, 'min_child_weight': 1.0546, 'reg_lambda': 3.0199}
+cat {'iterations': 731, 'rsm': 0.6178, 'learning_rate': 0.0473, 'subsample': 0.745, 'depth': 6, 'l2_leaf_reg': 2.969, 'bootstrap_type': 'Bernoulli'}

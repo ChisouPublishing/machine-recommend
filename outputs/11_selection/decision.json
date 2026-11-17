@@ -1,0 +1,1 @@
+{"adopt": "XGBoost", "runner_up": "CatBoost", "baseline": "LR", "tie": ["XGBoost"]}

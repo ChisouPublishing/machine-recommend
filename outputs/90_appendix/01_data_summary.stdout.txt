@@ -1,0 +1,40 @@
+期間: 2025-04-07 から 182 日、乱数の種 20261116
+■ テーブルの行数
+                        行数
+brand                    120
+campaign                   2
+campaign_assignment    59299
+category                  27
+event                5064933
+impression           7879630
+inventory            1287234
+item                    8000
+item_availability    1039462
+order                 140556
+order_line            162619
+return                 21250
+session              2824903
+sku                    49509
+truth_campaign         59299
+truth_impression     7879630
+truth_item              8000
+truth_order_line      162619
+truth_session_state    31590
+truth_user             50000
+user                   50000
+
+■ 推薦面ごとの率
+ 推薦面  表示数    CTR  真のクリック確率  購入率  真の購入確率
+    top 3768102 0.0462            0.0461  0.0095        0.0096
+related 2089500 0.0914            0.0914  0.0255        0.0264
+   mail 1435324 0.0150            0.0149  0.0029        0.0032
+   cart  586704 0.0654            0.0655  0.0200        0.0210
+
+■ 業務の性質
+                              値
+返品率                    0.1307
+期間中の新規会員の割合    0.2771
+期間中の新商品の割合      0.5564
+クーポンの真の効果の平均  0.0353
+効果が負の割合            0.2530
+

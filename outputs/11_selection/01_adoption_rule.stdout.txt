@@ -1,0 +1,8 @@
+[time] 採用規則は固定済み（書き換えない）
+primary_metric: LogLoss（校正後、評価 day 133〜146）
+business_metric: 返品控除後の期待粗利の順に上位 10% の表示を選んだときの、実際の返品控除後の粗利
+constraints: {'ranking_p99_ms': 10.0, 'note': '300 件の候補の採点、1 スレッド'}
+simplicity: 主の指標の差の 95% 区間が 0 を含むなら、単純な族を採る（LR < GBDT < FM < DNN）
+weights: {'LogLoss': 0.4, '期待粗利': 0.3, 'P99': 0.2, '解釈のしやすさ': 0.1}
+final_test: 採用・次点・基準線（LR）の 3 つだけを、テスト期間で 1 回だけ評価する
+[time] 固定した日時 2026-11-17T07:28:23

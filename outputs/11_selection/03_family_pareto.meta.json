@@ -1,0 +1,7 @@
+{
+ "script": "11_selection/03_family_pareto.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 3.3,
+ "started": "2026-11-17T12:13:53"
+}

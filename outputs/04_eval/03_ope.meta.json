@@ -1,0 +1,7 @@
+{
+ "script": "04_eval/03_ope.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 14.7,
+ "started": "2026-11-17T11:48:13"
+}

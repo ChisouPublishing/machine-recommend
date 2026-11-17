@@ -1,0 +1,7 @@
+{
+ "script": "11_selection/02_benchmark.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 27.2,
+ "started": "2026-11-17T12:13:26"
+}

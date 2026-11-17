@@ -1,0 +1,7 @@
+{
+ "script": "03_features/03_categorical.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 9.7,
+ "started": "2026-11-17T11:47:51"
+}

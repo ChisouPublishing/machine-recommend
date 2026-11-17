@@ -1,0 +1,7 @@
+{
+ "script": "13_ops/02_feast.py",
+ "env": "ext-ops",
+ "returncode": 0,
+ "seconds": 16.7,
+ "started": "2026-11-17T12:16:24"
+}

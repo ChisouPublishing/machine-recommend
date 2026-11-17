@@ -1,0 +1,7 @@
+
+project: suisen
+registry: /Users/you/Documents/makebooks/books/python-suisen/code/outputs/13_ops/feast_repo/registry.db
+provider: local
+online_store: {type: sqlite, path: /Users/you/Documents/makebooks/books/python-suisen/code/outputs/13_ops/feast_repo/online.db}
+offline_store: {type: file}
+entity_key_serialization_version: 3

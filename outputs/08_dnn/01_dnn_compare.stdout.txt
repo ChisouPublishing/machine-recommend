@@ -1,0 +1,19 @@
+[time] Wide & Deep（最小実装） 2.8 秒
+[time] DeepFM（最小実装） 2.9 秒
+[time] DIN（最小実装） 5.5 秒
+[time] Wide & Deep（FuxiCTR） 9.4 秒
+[time] DeepFM（FuxiCTR） 7.1 秒
+[time] DCN-V2（FuxiCTR） 8.1 秒
+[time] DIN（FuxiCTR） 17.0 秒
+[time] DIEN（FuxiCTR） 36.1 秒
+■ 深層学習のモデルの比較（評価 day 133〜146、学習は負例 10%、合成データ）
+                            AUC  LogLoss  PR-AUC     ECE  平均予測  実測率
+Wide & Deep（最小実装）  0.8255   0.0461  0.1225  0.0054    0.0121  0.0094
+DeepFM（最小実装）       0.8315   0.0453  0.1278  0.0054    0.0125  0.0094
+DIN（最小実装）          0.8247   0.0460  0.1221  0.0051    0.0117  0.0094
+Wide & Deep（FuxiCTR）   0.8479   0.0442  0.0896  0.0026    0.0115  0.0094
+DeepFM（FuxiCTR）        0.8482   0.0439  0.0945  0.0032    0.0126  0.0094
+DCN-V2（FuxiCTR）        0.8488   0.0436  0.1006  0.0018    0.0107  0.0094
+DIN（FuxiCTR）           0.8507   0.0437  0.1006  0.0021    0.0105  0.0094
+DIEN（FuxiCTR）          0.8153   0.0464  0.0945  0.0058    0.0138  0.0094
+

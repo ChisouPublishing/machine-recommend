@@ -1,0 +1,18 @@
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/sklearn/utils/deprecation.py:94: FutureWarning: Function stable_cumsum is deprecated; `sklearn.utils.extmath.stable_cumsum` is deprecated in version 1.8 and will be removed in 1.10. Use `np.cumulative_sum` with the desired dtype directly instead.
+  warnings.warn(msg, category=FutureWarning)

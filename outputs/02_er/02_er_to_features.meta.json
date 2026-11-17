@@ -1,0 +1,7 @@
+{
+ "script": "02_er/02_er_to_features.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 1.2,
+ "started": "2026-11-17T11:47:25"
+}

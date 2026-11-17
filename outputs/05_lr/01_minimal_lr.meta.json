@@ -1,0 +1,7 @@
+{
+ "script": "05_lr/01_minimal_lr.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 32.2,
+ "started": "2026-11-17T11:48:29"
+}

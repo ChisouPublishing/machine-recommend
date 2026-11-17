@@ -1,0 +1,7 @@
+{
+ "script": "04_eval/02_business.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 2.6,
+ "started": "2026-11-17T11:48:10"
+}

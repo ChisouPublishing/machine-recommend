@@ -1,0 +1,7 @@
+{
+ "script": "11_selection/05_real_data.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 18.0,
+ "started": "2026-11-17T12:15:36"
+}

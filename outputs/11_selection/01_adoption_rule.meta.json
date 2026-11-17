@@ -1,0 +1,7 @@
+{
+ "script": "11_selection/01_adoption_rule.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 1.1,
+ "started": "2026-11-17T12:13:25"
+}

@@ -1,0 +1,14 @@
+# 別環境 ext-recbole（code/.venv-recbole）。RecBole 1.2.0 が NumPy 2・新しい SciPy・pandas 3 で動かないため分ける。
+# 実行時に TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD=1（RecBole の torch.load が PyTorch 2.6 以降の既定と合わない）
+kmeans-pytorch==0.3
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==19.0.1
+pyyaml==6.0.3
+ray==2.49.2
+recbole==1.2.0
+scipy==1.12.0
+torch==2.15.0
+duckdb==2.0.0
+matplotlib==3.9.4
+scikit-learn==1.5.2

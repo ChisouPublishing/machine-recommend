@@ -1,0 +1,18 @@
+[time] mine:DeepFM の探索 2120.9 秒
+[time] fuxi:DeepFM の探索 4532.6 秒
+[time] fuxi:DCNv2 の探索 2677.0 秒
+[time] mine:DIN の探索 1245.6 秒
+[time] fuxi:DIN の探索 4457.1 秒
+■ 深層学習の 5 候補（測り直しは検証 day 133〜146・種 3 つ、合成データ）
+            モデル  完了  枝刈り  CV の LogLoss（最良）  測り直し LogLoss  標準偏差     AUC  AUC 標準偏差
+DeepFM（最小実装）     8       2                0.04467           0.04293   0.00026 0.85116       0.00060
+ DeepFM（FuxiCTR）     6       4                0.04535           0.04330   0.00015 0.85254       0.00088
+ DCN-V2（FuxiCTR）     7       3                0.04561           0.04361   0.00013 0.85267       0.00097
+   DIN（最小実装）     8       2                0.04485           0.04306   0.00020 0.85189       0.00099
+    DIN（FuxiCTR）     6       4                0.04583           0.04342   0.00021 0.84900       0.00053
+
+DeepFM（最小実装） {'k': 4, 'h1': 128, 'dropout': 0.19152, 'lr': 0.00278, 'epochs': 3, 'wd': 7e-05}
+DeepFM（FuxiCTR） {'k': 7, 'h1': 64, 'dropout': 0.05191, 'lr': 0.0077, 'epochs': 2, 'wd': 0.0}
+DCN-V2（FuxiCTR） {'k': 20, 'h1': 64, 'dropout': 0.00219, 'lr': 0.00778, 'epochs': 2, 'wd': 0.0}
+DIN（最小実装） {'k': 4, 'h1': 128, 'dropout': 0.19152, 'lr': 0.00278, 'epochs': 3, 'wd': 7e-05}
+DIN（FuxiCTR） {'k': 20, 'h1': 64, 'dropout': 0.00219, 'lr': 0.00778, 'epochs': 2, 'wd': 0.0}

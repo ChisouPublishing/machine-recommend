@@ -1,0 +1,11 @@
+2026/11/17 12:19:26 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/11/17 12:19:26 INFO mlflow.store.db.utils: Updating database tables
+2026/11/17 12:19:28 WARNING mlflow.utils.environment: Failed to resolve installed pip version. ``pip`` will be added to conda.yaml environment spec without a version specifier.
+Successfully registered model 'suisen_top_cvr'.
+Created version '1' of model 'suisen_top_cvr'.
+2026/11/17 12:19:29 WARNING mlflow.utils.environment: Failed to resolve installed pip version. ``pip`` will be added to conda.yaml environment spec without a version specifier.
+Registered model 'suisen_top_cvr' already exists. Creating a new version of this model...
+Created version '2' of model 'suisen_top_cvr'.
+2026/11/17 12:19:31 WARNING mlflow.utils.environment: Failed to resolve installed pip version. ``pip`` will be added to conda.yaml environment spec without a version specifier.
+Registered model 'suisen_top_cvr' already exists. Creating a new version of this model...
+Created version '3' of model 'suisen_top_cvr'.

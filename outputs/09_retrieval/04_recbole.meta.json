@@ -1,0 +1,7 @@
+{
+ "script": "09_retrieval/04_recbole.py",
+ "env": "ext-recbole",
+ "returncode": 0,
+ "seconds": 4.9,
+ "started": "2026-11-17T12:10:29"
+}

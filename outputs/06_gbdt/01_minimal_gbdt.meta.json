@@ -1,0 +1,7 @@
+{
+ "script": "06_gbdt/01_minimal_gbdt.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 65.7,
+ "started": "2026-11-17T11:50:34"
+}

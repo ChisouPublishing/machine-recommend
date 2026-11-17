@@ -1,0 +1,7 @@
+{
+ "script": "01_business/03_what_if.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 1.2,
+ "started": "2026-11-17T11:47:22"
+}

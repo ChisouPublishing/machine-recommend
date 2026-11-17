@@ -1,0 +1,10 @@
+# 別環境 ext-ops（code/.venv-ops）。Feast 0.68 と Evidently 0.7 が pandas 3 で動かないため分ける。
+duckdb==2.0.0
+evidently==0.7.23
+feast==0.68.0
+numpy==2.5.5
+pandas==2.3.3
+pyarrow==26.0.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+scipy==1.18.1

@@ -1,0 +1,16 @@
+商品のベクトル 240,000 件 × 64 次元、検索する会員 1,000 人、K = 100
+[time] 総当たり（faiss IndexFlatIP）：作る 0.0 秒・検索 0.971 秒・総当たりの 1 倍の速さ
+[time] faiss HNSW（M=16, efSearch=64）：作る 15.4 秒・検索 0.057 秒・総当たりの 17 倍の速さ
+[time] faiss HNSW（M=32, efSearch=128）：作る 18.9 秒・検索 0.083 秒・総当たりの 12 倍の速さ
+[time] faiss IVF（nlist=1024, nprobe=8）：作る 0.3 秒・検索 0.021 秒・総当たりの 46 倍の速さ
+[time] faiss IVF（nlist=1024, nprobe=32）：作る 0.3 秒・検索 0.051 秒・総当たりの 19 倍の速さ
+[time] hnswlib（M=16, ef=128）：作る 25.7 秒・検索 0.008 秒・総当たりの 117 倍の速さ
+■ ANN の比較（24 万件の商品、1,000 人の検索、合成データ）
+                              方法  再現率@100（対 総当たり）
+     総当たり（faiss IndexFlatIP）                      1.000
+   faiss HNSW（M=16, efSearch=64）                      0.521
+  faiss HNSW（M=32, efSearch=128）                      0.713
+ faiss IVF（nlist=1024, nprobe=8）                      0.462
+faiss IVF（nlist=1024, nprobe=32）                      0.773
+           hnswlib（M=16, ef=128）                      0.676
+

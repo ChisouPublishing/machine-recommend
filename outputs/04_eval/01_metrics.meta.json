@@ -1,0 +1,7 @@
+{
+ "script": "04_eval/01_metrics.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 3.2,
+ "started": "2026-11-17T11:48:07"
+}

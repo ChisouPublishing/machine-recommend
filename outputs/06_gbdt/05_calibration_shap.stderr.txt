@@ -1,0 +1,2 @@
+/Users/you/Documents/makebooks/books/python-suisen/code/.venv/lib/python3.12/site-packages/shap/explainers/_tree.py:578: UserWarning: LightGBM binary classifier with TreeExplainer shap values output has changed to a list of ndarray
+  warnings.warn(

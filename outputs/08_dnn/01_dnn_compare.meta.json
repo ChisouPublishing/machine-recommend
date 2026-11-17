@@ -1,0 +1,7 @@
+{
+ "script": "08_dnn/01_dnn_compare.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 157.0,
+ "started": "2026-11-17T12:01:40"
+}

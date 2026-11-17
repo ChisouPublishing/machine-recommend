@@ -1,0 +1,7 @@
+{
+ "script": "13_ops/04_evidently.py",
+ "env": "ext-ops",
+ "returncode": 0,
+ "seconds": 3.5,
+ "started": "2026-11-17T12:17:22"
+}

@@ -1,0 +1,7 @@
+{
+ "script": "00_check/03_env_ops.py",
+ "env": "ext-ops",
+ "returncode": 0,
+ "seconds": 3.6,
+ "started": "2026-11-17T11:47:16"
+}

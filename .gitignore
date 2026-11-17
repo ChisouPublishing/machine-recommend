@@ -1,0 +1,32 @@
+.venv/
+.venv-*/
+third_party/FuxiCTR/
+__pycache__/
+.pytest_cache/
+data/generated/
+outputs/**/ckpt/
+mlruns/
+log_tensorboard/
+# 大きな生成物（run_all.py で作り直せる）
+outputs/features/
+outputs/fuxictr/
+outputs/**/*.npz
+outputs/**/*.npy
+outputs/**/*.parquet
+outputs/**/*.pkl
+!outputs/09_retrieval/recbole_cands.pkl
+outputs/**/*.db
+!outputs/optuna/*.db
+outputs/09_retrieval/recbole/
+outputs/13_ops/registry/
+outputs/13_ops/mlartifacts/
+outputs/13_ops/*.html
+data/public/raw/
+data/public/*.parquet
+
+# ローカル認証情報
+.env
+.env.*
+!.env.example
+*.pem
+*.key

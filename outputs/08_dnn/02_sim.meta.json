@@ -1,0 +1,7 @@
+{
+ "script": "08_dnn/02_sim.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 103.0,
+ "started": "2026-11-17T12:04:17"
+}
