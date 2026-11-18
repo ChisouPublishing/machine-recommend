@@ -1,0 +1,9 @@
+[time] ShareBottom 44.2 秒
+[time] MMoE 80.4 秒
+[time] PLE 90.8 秒
+■ FuxiCTR の多タスクのモデル（評価 day 133〜146、真の確率で答え合わせ、合成データ）
+                        CTR AUC  購入 AUC  購入 LogLoss  購入 真との相関  購入 平均/真
+ShareBottom（FuxiCTR）   0.7711    0.8621        0.0421           0.4713        1.0668
+MMoE（FuxiCTR）          0.7706    0.8604        0.0421           0.4602        1.0473
+PLE（FuxiCTR）           0.7707    0.8614        0.0421           0.4667        1.0110
+

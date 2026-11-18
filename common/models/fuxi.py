@@ -35,6 +35,9 @@ import torch  # noqa: E402
 
 torch.set_num_threads(1)   # 1 スレッドで学習する（結果を揺らさない。LightGBM の OpenMP とぶつかって落ちるのも防ぐ。付録 A）
 
+# Ray は、ディスクの使用率が 95% を超えると一時ファイルを作らずに止まる。本書の表は数百 MB なので、空きの少ない環境でも
+# 動くよう、止める閾値を 99% に上げる（2026-11-18、第8章 06 で確認）
+os.environ.setdefault("RAY_local_fs_capacity_threshold", "0.99")
 if not ray.is_initialized():
     ray.init(ignore_reinit_error=True, logging_level=logging.ERROR, num_cpus=1, include_dashboard=False)
 
@@ -48,13 +51,16 @@ SEQ_COLS = [{"name": "hist_items", "active": True, "dtype": "str", "type": "sequ
              "share_embedding": "item_id", "padding": "pre"},
             {"name": "hist_cats", "active": True, "dtype": "str", "type": "sequence", "splitter": "^", "max_len": SEQ_LEN,
              "share_embedding": "category_id", "padding": "pre"}]
-SUB = {"DeepFM": "DeepFM/DeepFM_torch", "WideDeep": "WideDeep/WideDeep_torch", "DNN": "DNN/DNN_torch"}
+SUB = {"DeepFM": "DeepFM/DeepFM_torch", "WideDeep": "WideDeep/WideDeep_torch", "DNN": "DNN/DNN_torch",
+       "ShareBottom": "multitask/ShareBottom", "MMoE": "multitask/MMoE", "PLE": "multitask/PLE"}   # 多タスク（第8章 8.6）
 
 
 # %% Step 2 — データを渡す｜学習・早期終了用・評価の 3 つを CSV に書き、FuxiCTR の前処理で語彙と Parquet を作る（語彙と標準化は学習だけから）。
-def prepare(tag: str, train: pd.DataFrame, holdout: pd.DataFrame, test: pd.DataFrame, label: str = "purchased",
+def prepare(tag: str, train: pd.DataFrame, holdout: pd.DataFrame, test: pd.DataFrame, label="purchased",
             with_seq: bool = False, numeric: str = "bin"):
-    """numeric="bin"：数値を学習期間の分位点で区間に分ける（既定）。"raw"：数値のまま渡し FuxiCTR に標準化させる（落とし穴の再現用）。"""
+    """numeric="bin"：数値を学習期間の分位点で区間に分ける（既定）。"raw"：数値のまま渡し FuxiCTR に標準化させる（落とし穴の再現用）。
+    label にリスト（例：["clicked", "purchased"]）を渡すと、多タスクのモデル（第8章 8.6）用に複数の正解を持たせる。"""
+    labels = [label] if isinstance(label, str) else list(label)
     root = OUT / "fuxictr"
     d = root / tag
     if d.exists():
@@ -71,12 +77,13 @@ def prepare(tag: str, train: pd.DataFrame, holdout: pd.DataFrame, test: pd.DataF
                 out[f"{c}_bin"] = np.searchsorted(edges[c], part[c].to_numpy(), side="right")
             else:
                 out[c] = np.log1p(np.clip(part[c].to_numpy(float), 0, None))
-        out[label] = part[label].astype(float).to_numpy()
+        for lb in labels:
+            out[lb] = part[lb].astype(float).to_numpy()
         out.to_csv(paths[name], index=False)
     base = BASE_COLS if numeric == "bin" else [{"name": FIELDS, "active": True, "dtype": "str", "type": "categorical"},
                                                {"name": NUM_COLS, "active": True, "dtype": "float", "type": "numeric",
                                                 "normalizer": "StandardScaler"}]
-    fp = FeatureProcessor(feature_cols=base + (SEQ_COLS if with_seq else []), label_col={"name": label, "dtype": "float"}, dataset_id=tag,
+    fp = FeatureProcessor(feature_cols=base + (SEQ_COLS if with_seq else []), label_col=[{"name": lb, "dtype": "float"} for lb in labels] if len(labels) > 1 else {"name": labels[0], "dtype": "float"}, dataset_id=tag,
                           data_root=str(root), min_categr_count=1)
     tr, va, te = build_dataset(fp, train_data=paths["train"], valid_data=paths["valid"], test_data=paths["test"])
     for p_ in paths.values():                                            # 変換に使った CSV は消す（Parquet が残る。ディスクを節約）
@@ -117,7 +124,9 @@ def fit_predict(model_name: str, data: dict, overrides: dict, seed: int = 0, ret
     model.fit(tr, validation_data=va, epochs=p["epochs"])                # 早期終了は学習期間の末の 7 日（holdout）で判断する
     te = RankDataLoader(fmap, stage="test", test_data=p["test_data"], batch_size=p["batch_size"], data_format="parquet",
                         shuffle=False)
-    pred = np.asarray(model.predict(te), dtype=np.float64)
+    pred = model.predict(te)
+    pred = ({k: np.asarray(v, dtype=np.float64) for k, v in pred.items()} if isinstance(pred, dict)   # 多タスク：正解の列名ごと
+            else np.asarray(pred, dtype=np.float64))
     if not return_model:
         return pred
     one = RankDataLoader(fmap, stage="test", test_data=p["test_data"], batch_size=sample_batch or 300, data_format="parquet",

@@ -1,0 +1,7 @@
+{
+ "script": "08_dnn/06_multitask_fuxi.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 273.2,
+ "started": "2026-11-18T01:33:44"
+}

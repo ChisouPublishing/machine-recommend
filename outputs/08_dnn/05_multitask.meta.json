@@ -1,0 +1,7 @@
+{
+ "script": "08_dnn/05_multitask.py",
+ "env": "main",
+ "returncode": 0,
+ "seconds": 150.0,
+ "started": "2026-11-18T01:31:01"
+}

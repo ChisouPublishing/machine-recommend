@@ -1,268 +1,254 @@
-[33m(raylet)[0m [2026-11-17 12:01:55,599 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 14.6344 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-[33m(raylet)[0m [2026-11-17 12:02:05,683 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 14.4905 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:02:05,999	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvYpQhnJWwHXSRCNtMq_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:05,999	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvYpQhnJWwHXSRCNtMq_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
-2026-11-17 12:02:06,001	INFO __init__.py:56 -- Progress will be logged because stdout is a non-interactive terminal.
-2026-11-17 12:02:06,031	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034yvYpQhnJWwHXSRCNtMq_0 =======
-2026-11-17 12:02:06,031	INFO logging_progress.py:225 -- Total Progress: 0/?
-2026-11-17 12:02:06,031	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
-2026-11-17 12:02:06,032	INFO logging_progress.py:181 -- 
-2026-11-17 12:02:06,032	INFO logging_progress.py:231 -- Repartition: 0/1
-2026-11-17 12:02:06,032	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (86.9MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
-2026-11-17 12:02:06,032	INFO logging_progress.py:231 --     - Split Repartition: 0/1
-2026-11-17 12:02:06,032	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
-2026-11-17 12:02:06,032	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
-2026-11-17 12:02:06,032	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
-2026-11-17 12:02:06,032	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
-2026-11-17 12:02:06,032	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
-2026-11-17 12:02:06,032	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
-2026-11-17 12:02:06,032	INFO logging_progress.py:231 --     - Map: 0/1
-2026-11-17 12:02:06,032	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
-2026-11-17 12:02:06,032	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
-2026-11-17 12:02:06,032	INFO logging_progress.py:231 --     - Reduce: 0/1
-2026-11-17 12:02:06,032	INFO logging_progress.py:192 -- =================================================================
-2026-11-17 12:02:12,431	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvYpQhnJWwHXSRCNtMq_0 execution finished in 6.43 seconds
-2026-11-17 12:02:13,887	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvZ1t7HLDkiElX0Lz90_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:13,887	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvZ1t7HLDkiElX0Lz90_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
-2026-11-17 12:02:13,891	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034yvZ1t7HLDkiElX0Lz90_0 =======
-2026-11-17 12:02:13,891	INFO logging_progress.py:225 -- Total Progress: 0/?
-2026-11-17 12:02:13,891	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
-2026-11-17 12:02:13,891	INFO logging_progress.py:181 -- 
-2026-11-17 12:02:13,891	INFO logging_progress.py:231 -- Repartition: 0/1
-2026-11-17 12:02:13,891	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (5.5MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
-2026-11-17 12:02:13,891	INFO logging_progress.py:231 --     - Split Repartition: 0/1
-2026-11-17 12:02:13,891	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
-2026-11-17 12:02:13,891	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
-2026-11-17 12:02:13,891	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
-2026-11-17 12:02:13,892	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
-2026-11-17 12:02:13,892	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
-2026-11-17 12:02:13,892	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
-2026-11-17 12:02:13,892	INFO logging_progress.py:231 --     - Map: 0/1
-2026-11-17 12:02:13,892	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
-2026-11-17 12:02:13,892	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
-2026-11-17 12:02:13,892	INFO logging_progress.py:231 --     - Reduce: 0/1
-2026-11-17 12:02:13,892	INFO logging_progress.py:192 -- =================================================================
-[33m(raylet)[0m [2026-11-17 12:02:15,769 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 14.4736 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:02:18,947	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvZ1t7HLDkiElX0Lz90_0 execution finished in 5.06 seconds
-2026-11-17 12:02:20,399	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvZC82QdeOpNMXZ1dCQ_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:20,399	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvZC82QdeOpNMXZ1dCQ_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
-2026-11-17 12:02:20,403	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034yvZC82QdeOpNMXZ1dCQ_0 =======
-2026-11-17 12:02:20,403	INFO logging_progress.py:225 -- Total Progress: 0/?
-2026-11-17 12:02:20,403	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
-2026-11-17 12:02:20,403	INFO logging_progress.py:181 -- 
-2026-11-17 12:02:20,403	INFO logging_progress.py:231 -- Repartition: 0/1
-2026-11-17 12:02:20,403	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (100.3MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
-2026-11-17 12:02:20,403	INFO logging_progress.py:231 --     - Split Repartition: 0/1
-2026-11-17 12:02:20,403	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
-2026-11-17 12:02:20,403	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
-2026-11-17 12:02:20,403	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
-2026-11-17 12:02:20,403	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
-2026-11-17 12:02:20,403	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
-2026-11-17 12:02:20,403	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
-2026-11-17 12:02:20,403	INFO logging_progress.py:231 --     - Map: 0/1
-2026-11-17 12:02:20,403	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
-2026-11-17 12:02:20,403	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
-2026-11-17 12:02:20,403	INFO logging_progress.py:231 --     - Reduce: 0/1
-2026-11-17 12:02:20,403	INFO logging_progress.py:192 -- =================================================================
-[33m(raylet)[0m [2026-11-17 12:02:25,853 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 14.4719 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:02:26,732	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvZC82QdeOpNMXZ1dCQ_0 execution finished in 6.33 seconds
-2026-11-17 12:02:31,505	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvZTafRppUi46Vle02Q_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:31,505	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvZTafRppUi46Vle02Q_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
-2026-11-17 12:02:31,509	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034yvZTafRppUi46Vle02Q_0 =======
-2026-11-17 12:02:31,509	INFO logging_progress.py:225 -- Total Progress: 0/?
-2026-11-17 12:02:31,509	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
-2026-11-17 12:02:31,509	INFO logging_progress.py:181 -- 
-2026-11-17 12:02:31,509	INFO logging_progress.py:231 -- Repartition: 0/1
-2026-11-17 12:02:31,509	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (119.6MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
-2026-11-17 12:02:31,509	INFO logging_progress.py:231 --     - Split Repartition: 0/1
-2026-11-17 12:02:31,509	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
-2026-11-17 12:02:31,509	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
-2026-11-17 12:02:31,509	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
-2026-11-17 12:02:31,509	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
-2026-11-17 12:02:31,509	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
-2026-11-17 12:02:31,509	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
-2026-11-17 12:02:31,509	INFO logging_progress.py:231 --     - Map: 0/1
-2026-11-17 12:02:31,509	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
-2026-11-17 12:02:31,509	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
-2026-11-17 12:02:31,509	INFO logging_progress.py:231 --     - Reduce: 0/1
-2026-11-17 12:02:31,509	INFO logging_progress.py:192 -- =================================================================
-[33m(raylet)[0m [2026-11-17 12:02:35,943 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.9024 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:02:39,489	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvZTafRppUi46Vle02Q_0 execution finished in 7.98 seconds
-2026-11-17 12:02:41,302	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvZizZVcHBvT1oTRFNe_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:41,302	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvZizZVcHBvT1oTRFNe_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
-2026-11-17 12:02:41,305	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034yvZizZVcHBvT1oTRFNe_0 =======
-2026-11-17 12:02:41,306	INFO logging_progress.py:225 -- Total Progress: 0/?
-2026-11-17 12:02:41,306	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
-2026-11-17 12:02:41,306	INFO logging_progress.py:181 -- 
-2026-11-17 12:02:41,306	INFO logging_progress.py:231 -- Repartition: 0/1
-2026-11-17 12:02:41,306	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (7.6MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
-2026-11-17 12:02:41,306	INFO logging_progress.py:231 --     - Split Repartition: 0/1
-2026-11-17 12:02:41,306	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
-2026-11-17 12:02:41,306	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
-2026-11-17 12:02:41,306	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
-2026-11-17 12:02:41,306	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
-2026-11-17 12:02:41,306	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
-2026-11-17 12:02:41,306	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
-2026-11-17 12:02:41,306	INFO logging_progress.py:231 --     - Map: 0/1
-2026-11-17 12:02:41,306	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
-2026-11-17 12:02:41,306	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
-2026-11-17 12:02:41,306	INFO logging_progress.py:231 --     - Reduce: 0/1
-2026-11-17 12:02:41,306	INFO logging_progress.py:192 -- =================================================================
-[33m(raylet)[0m [2026-11-17 12:02:46,024 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.8646 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:02:46,631	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvZizZVcHBvT1oTRFNe_0 execution finished in 5.33 seconds
-2026-11-17 12:02:48,216	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvZtrWQsppWvaDtsvRJ_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:48,216	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvZtrWQsppWvaDtsvRJ_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
-2026-11-17 12:02:48,220	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034yvZtrWQsppWvaDtsvRJ_0 =======
-2026-11-17 12:02:48,220	INFO logging_progress.py:225 -- Total Progress: 0/?
-2026-11-17 12:02:48,220	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
-2026-11-17 12:02:48,220	INFO logging_progress.py:181 -- 
-2026-11-17 12:02:48,220	INFO logging_progress.py:231 -- Repartition: 0/1
-2026-11-17 12:02:48,220	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (139.1MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
-2026-11-17 12:02:48,220	INFO logging_progress.py:231 --     - Split Repartition: 0/1
-2026-11-17 12:02:48,220	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
-2026-11-17 12:02:48,220	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
-2026-11-17 12:02:48,220	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
-2026-11-17 12:02:48,220	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
-2026-11-17 12:02:48,220	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
-2026-11-17 12:02:48,221	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
-2026-11-17 12:02:48,221	INFO logging_progress.py:231 --     - Map: 0/1
-2026-11-17 12:02:48,221	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
-2026-11-17 12:02:48,221	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
-2026-11-17 12:02:48,221	INFO logging_progress.py:231 --     - Reduce: 0/1
-2026-11-17 12:02:48,221	INFO logging_progress.py:192 -- =================================================================
-[33m(raylet)[0m [2026-11-17 12:02:56,111 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.7657 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:02:56,583	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvZtrWQsppWvaDtsvRJ_0 execution finished in 8.37 seconds
-2026-11-17 12:02:57,629	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yva8eyrVANpdFF6I1Cp_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:57,629	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yva8eyrVANpdFF6I1Cp_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:02:57,629	WARNING __init__.py:28 -- Progress bars disabled. To enable, set `ray.data.DataContext.get_current().enable_progress_bars = True`.
-2026-11-17 12:02:59,254	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yva8eyrVANpdFF6I1Cp_0 execution finished in 1.63 seconds
-2026-11-17 12:02:59,260	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaBE7uX2txqWL8vGDc_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:59,260	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaBE7uX2txqWL8vGDc_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:02:59,287	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaBE7uX2txqWL8vGDc_0 execution finished in 0.03 seconds
-2026-11-17 12:02:59,360	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yva8f2t6M9fWtX1xYEm_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:02:59,360	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yva8f2t6M9fWtX1xYEm_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:00,637	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yva8f2t6M9fWtX1xYEm_0 execution finished in 1.28 seconds
-2026-11-17 12:03:01,746	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaBE8SpHFvYRNQfxwp_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:01,746	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaBE8SpHFvYRNQfxwp_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:02,157	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaBE8SpHFvYRNQfxwp_0 execution finished in 0.41 seconds
-2026-11-17 12:03:02,191	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yva8f2t6M9fWtX1xYEm_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:02,191	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yva8f2t6M9fWtX1xYEm_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:03,425	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yva8f2t6M9fWtX1xYEm_1 execution finished in 1.23 seconds
-2026-11-17 12:03:04,533	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaBE8SpHFvYRNQfxwp_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:04,533	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaBE8SpHFvYRNQfxwp_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:04,932	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaBE8SpHFvYRNQfxwp_1 execution finished in 0.40 seconds
-2026-11-17 12:03:04,971	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaKCreuJGXROLYyhy2_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:04,971	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaKCreuJGXROLYyhy2_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:04,996	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaKCreuJGXROLYyhy2_0 execution finished in 0.03 seconds
-2026-11-17 12:03:05,000	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaKChH04DKpnaCcMbF_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:05,001	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaKChH04DKpnaCcMbF_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:06,140	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaKChH04DKpnaCcMbF_0 execution finished in 1.14 seconds
-[33m(raylet)[0m [2026-11-17 12:03:06,191 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.876 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:03:06,634	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaMp0CUXAH7hQ5xbGK_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:06,635	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaMp0CUXAH7hQ5xbGK_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:06,663	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaMp0CUXAH7hQ5xbGK_0 execution finished in 0.03 seconds
-2026-11-17 12:03:06,669	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaMsL8x2XH30x4txUy_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:06,669	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaMsL8x2XH30x4txUy_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:06,697	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaMsL8x2XH30x4txUy_0 execution finished in 0.03 seconds
-2026-11-17 12:03:06,715	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaMp3aZ4UhdkLbqxjZ_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:06,715	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaMp3aZ4UhdkLbqxjZ_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:07,515	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaMp3aZ4UhdkLbqxjZ_0 execution finished in 0.80 seconds
-2026-11-17 12:03:08,706	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaMsLmpezwYXnh2PRc_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:08,706	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaMsLmpezwYXnh2PRc_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:09,105	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaMsLmpezwYXnh2PRc_0 execution finished in 0.40 seconds
-2026-11-17 12:03:09,141	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaMp3aZ4UhdkLbqxjZ_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:09,141	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaMp3aZ4UhdkLbqxjZ_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:10,359	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaMp3aZ4UhdkLbqxjZ_1 execution finished in 1.22 seconds
-2026-11-17 12:03:11,556	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaMsLmpezwYXnh2PRc_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:11,556	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaMsLmpezwYXnh2PRc_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:11,945	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaMsLmpezwYXnh2PRc_1 execution finished in 0.39 seconds
-2026-11-17 12:03:11,983	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaVELZBeXrmi7mtRL4_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:11,983	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaVELZBeXrmi7mtRL4_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:12,009	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaVELZBeXrmi7mtRL4_0 execution finished in 0.03 seconds
-2026-11-17 12:03:12,013	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaVENLQNGk2UeHP4fq_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:12,013	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaVENLQNGk2UeHP4fq_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:13,222	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaVENLQNGk2UeHP4fq_0 execution finished in 1.21 seconds
-2026-11-17 12:03:13,737	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaXzJ2xAyO4BtI2hC8_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:13,738	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaXzJ2xAyO4BtI2hC8_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:13,763	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaXzJ2xAyO4BtI2hC8_0 execution finished in 0.03 seconds
-2026-11-17 12:03:13,769	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaY2PaJxRQpRvOOiJL_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:13,769	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaY2PaJxRQpRvOOiJL_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:13,796	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaY2PaJxRQpRvOOiJL_0 execution finished in 0.03 seconds
-2026-11-17 12:03:13,819	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaXzLelEDPc3eiu16D_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:13,819	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaXzLelEDPc3eiu16D_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:14,519	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaXzLelEDPc3eiu16D_0 execution finished in 0.70 seconds
-2026-11-17 12:03:16,151	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaY2RXjvZrLzDlV2fU_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:16,151	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaY2RXjvZrLzDlV2fU_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-[33m(raylet)[0m [2026-11-17 12:03:16,279 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.8726 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:03:16,552	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaY2RXjvZrLzDlV2fU_0 execution finished in 0.40 seconds
-2026-11-17 12:03:16,599	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaXzLelEDPc3eiu16D_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:16,599	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaXzLelEDPc3eiu16D_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:17,825	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaXzLelEDPc3eiu16D_1 execution finished in 1.23 seconds
-2026-11-17 12:03:19,445	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaY2RXjvZrLzDlV2fU_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:19,445	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaY2RXjvZrLzDlV2fU_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:19,836	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaY2RXjvZrLzDlV2fU_1 execution finished in 0.39 seconds
-2026-11-17 12:03:19,884	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvahefqVRZIxI5kJ3x5_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:19,885	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvahefqVRZIxI5kJ3x5_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:19,912	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvahefqVRZIxI5kJ3x5_0 execution finished in 0.03 seconds
-2026-11-17 12:03:19,916	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvahed1anYM3wE4hXw1_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:19,916	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvahed1anYM3wE4hXw1_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:21,132	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvahed1anYM3wE4hXw1_0 execution finished in 1.22 seconds
-2026-11-17 12:03:21,883	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaknPtFj8RpXwBlOXs_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:21,883	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaknPtFj8RpXwBlOXs_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:21,909	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaknPtFj8RpXwBlOXs_0 execution finished in 0.03 seconds
-2026-11-17 12:03:21,916	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvakqcSMO94xk0ZJBVl_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:21,916	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvakqcSMO94xk0ZJBVl_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:21,944	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvakqcSMO94xk0ZJBVl_0 execution finished in 0.03 seconds
-2026-11-17 12:03:21,967	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaknR2wds7xoM7DQXL_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:21,967	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaknR2wds7xoM7DQXL_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:22,425	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaknR2wds7xoM7DQXL_0 execution finished in 0.46 seconds
-[33m(raylet)[0m [2026-11-17 12:03:26,367 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.8348 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:03:27,088	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvakqa9RPRi1awMbFKF_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:27,088	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvakqa9RPRi1awMbFKF_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:28,312	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvakqa9RPRi1awMbFKF_0 execution finished in 1.22 seconds
-2026-11-17 12:03:28,433	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvaknR2wds7xoM7DQXL_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:28,433	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvaknR2wds7xoM7DQXL_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:29,632	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvaknR2wds7xoM7DQXL_1 execution finished in 1.20 seconds
-2026-11-17 12:03:34,155	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvakqa9RPRi1awMbFKF_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:34,155	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvakqa9RPRi1awMbFKF_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:35,504	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvakqa9RPRi1awMbFKF_1 execution finished in 1.35 seconds
-2026-11-17 12:03:35,642	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvb6QfQihYikM50rHL3_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:35,642	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvb6QfQihYikM50rHL3_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:35,671	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvb6QfQihYikM50rHL3_0 execution finished in 0.03 seconds
-2026-11-17 12:03:35,675	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvb6QfNZWDnBWa2Fnxl_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:35,675	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvb6QfNZWDnBWa2Fnxl_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-[33m(raylet)[0m [2026-11-17 12:03:36,455 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.7917 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:03:36,831	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvb6QfNZWDnBWa2Fnxl_0 execution finished in 1.16 seconds
-2026-11-17 12:03:38,867	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbBUyVLLBX1Y1OVRSC_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:38,867	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbBUyVLLBX1Y1OVRSC_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:38,894	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbBUyVLLBX1Y1OVRSC_0 execution finished in 0.03 seconds
-2026-11-17 12:03:38,900	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbBYGGygRcB3dm9nh4_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:38,900	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbBYGGygRcB3dm9nh4_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:03:38,927	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbBYGGygRcB3dm9nh4_0 execution finished in 0.03 seconds
-2026-11-17 12:03:38,951	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:38,951	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:40,268	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_0 execution finished in 1.32 seconds
-[33m(raylet)[0m [2026-11-17 12:03:46,540 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.7278 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:03:48,058	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbBYDytHcmIX2LWfsV_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:48,058	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbBYDytHcmIX2LWfsV_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:49,340	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbBYDytHcmIX2LWfsV_0 execution finished in 1.28 seconds
-2026-11-17 12:03:49,536	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:49,536	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:50,668	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_1 execution finished in 1.13 seconds
-[33m(raylet)[0m [2026-11-17 12:03:56,617 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.6605 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:03:58,633	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbBYDytHcmIX2LWfsV_1. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:03:58,633	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbBYDytHcmIX2LWfsV_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:03:59,977	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbBYDytHcmIX2LWfsV_1 execution finished in 1.34 seconds
-2026-11-17 12:04:00,167	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_2. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:04:00,167	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_2: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:04:01,293	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbBV1BkcMcRW6qK4lQ_2 execution finished in 1.13 seconds
-[33m(raylet)[0m [2026-11-17 12:04:06,700 E 41843 98337463] (raylet) file_system_monitor.cc:116: /tmp/ray/session_2026-11-17_12-01-43_277545_41811 is over 95% full, available space: 13.6599 GB; capacity: 926.352 GB. Object creation will fail if spilling is required.
-2026-11-17 12:04:09,111	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbBYDytHcmIX2LWfsV_2. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:04:09,111	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbBYDytHcmIX2LWfsV_2: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:04:10,382	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbBYDytHcmIX2LWfsV_2 execution finished in 1.27 seconds
-2026-11-17 12:04:10,572	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbzLdM891YGSEgHyEg_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:04:10,572	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbzLdM891YGSEgHyEg_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
-2026-11-17 12:04:10,598	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbzLdM891YGSEgHyEg_0 execution finished in 0.03 seconds
-2026-11-17 12:04:10,602	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034yvbzLbodLmknPhzTAVu_0. Full logs are in /tmp/ray/session_2026-11-17_12-01-43_277545_41811/logs/ray-data
-2026-11-17 12:04:10,602	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034yvbzLbodLmknPhzTAVu_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
-2026-11-17 12:04:11,665	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034yvbzLbodLmknPhzTAVu_0 execution finished in 1.06 seconds
+2026-11-18 01:44:15,162	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFjlgj8y9MzDNxt5dpv_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:15,162	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFjlgj8y9MzDNxt5dpv_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
+2026-11-18 01:44:15,164	INFO __init__.py:56 -- Progress will be logged because stdout is a non-interactive terminal.
+2026-11-18 01:44:15,196	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034zFjlgj8y9MzDNxt5dpv_0 =======
+2026-11-18 01:44:15,196	INFO logging_progress.py:225 -- Total Progress: 0/?
+2026-11-18 01:44:15,196	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
+2026-11-18 01:44:15,196	INFO logging_progress.py:181 -- 
+2026-11-18 01:44:15,197	INFO logging_progress.py:231 -- Repartition: 0/1
+2026-11-18 01:44:15,197	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (86.9MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
+2026-11-18 01:44:15,197	INFO logging_progress.py:231 --     - Split Repartition: 0/1
+2026-11-18 01:44:15,197	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
+2026-11-18 01:44:15,197	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
+2026-11-18 01:44:15,197	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
+2026-11-18 01:44:15,197	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
+2026-11-18 01:44:15,197	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
+2026-11-18 01:44:15,197	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
+2026-11-18 01:44:15,197	INFO logging_progress.py:231 --     - Map: 0/1
+2026-11-18 01:44:15,197	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
+2026-11-18 01:44:15,197	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
+2026-11-18 01:44:15,197	INFO logging_progress.py:231 --     - Reduce: 0/1
+2026-11-18 01:44:15,197	INFO logging_progress.py:192 -- =================================================================
+2026-11-18 01:44:20,210	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFjlgj8y9MzDNxt5dpv_0 execution finished in 5.05 seconds
+2026-11-18 01:44:21,403	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFjvYgEOTXXoF040M3g_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:21,403	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFjvYgEOTXXoF040M3g_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
+2026-11-18 01:44:21,407	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034zFjvYgEOTXXoF040M3g_0 =======
+2026-11-18 01:44:21,407	INFO logging_progress.py:225 -- Total Progress: 0/?
+2026-11-18 01:44:21,407	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
+2026-11-18 01:44:21,407	INFO logging_progress.py:181 -- 
+2026-11-18 01:44:21,407	INFO logging_progress.py:231 -- Repartition: 0/1
+2026-11-18 01:44:21,407	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (5.5MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
+2026-11-18 01:44:21,407	INFO logging_progress.py:231 --     - Split Repartition: 0/1
+2026-11-18 01:44:21,407	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
+2026-11-18 01:44:21,407	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
+2026-11-18 01:44:21,407	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
+2026-11-18 01:44:21,407	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
+2026-11-18 01:44:21,407	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
+2026-11-18 01:44:21,407	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
+2026-11-18 01:44:21,407	INFO logging_progress.py:231 --     - Map: 0/1
+2026-11-18 01:44:21,407	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
+2026-11-18 01:44:21,407	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
+2026-11-18 01:44:21,408	INFO logging_progress.py:231 --     - Reduce: 0/1
+2026-11-18 01:44:21,408	INFO logging_progress.py:192 -- =================================================================
+2026-11-18 01:44:25,101	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFjvYgEOTXXoF040M3g_0 execution finished in 3.70 seconds
+2026-11-18 01:44:26,492	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFk3YnvGaLAejBIWCAD_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:26,492	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFk3YnvGaLAejBIWCAD_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
+2026-11-18 01:44:26,496	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034zFk3YnvGaLAejBIWCAD_0 =======
+2026-11-18 01:44:26,496	INFO logging_progress.py:225 -- Total Progress: 0/?
+2026-11-18 01:44:26,496	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
+2026-11-18 01:44:26,496	INFO logging_progress.py:181 -- 
+2026-11-18 01:44:26,496	INFO logging_progress.py:231 -- Repartition: 0/1
+2026-11-18 01:44:26,496	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (100.3MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
+2026-11-18 01:44:26,496	INFO logging_progress.py:231 --     - Split Repartition: 0/1
+2026-11-18 01:44:26,496	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
+2026-11-18 01:44:26,496	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
+2026-11-18 01:44:26,496	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
+2026-11-18 01:44:26,496	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
+2026-11-18 01:44:26,496	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
+2026-11-18 01:44:26,496	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
+2026-11-18 01:44:26,496	INFO logging_progress.py:231 --     - Map: 0/1
+2026-11-18 01:44:26,496	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
+2026-11-18 01:44:26,496	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
+2026-11-18 01:44:26,496	INFO logging_progress.py:231 --     - Reduce: 0/1
+2026-11-18 01:44:26,496	INFO logging_progress.py:192 -- =================================================================
+2026-11-18 01:44:31,544	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFk3YnvGaLAejBIWCAD_0 execution finished in 5.05 seconds
+2026-11-18 01:44:36,685	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkJaRxKxFicuiFXSpP_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:36,685	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkJaRxKxFicuiFXSpP_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
+2026-11-18 01:44:36,689	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034zFkJaRxKxFicuiFXSpP_0 =======
+2026-11-18 01:44:36,689	INFO logging_progress.py:225 -- Total Progress: 0/?
+2026-11-18 01:44:36,689	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
+2026-11-18 01:44:36,689	INFO logging_progress.py:181 -- 
+2026-11-18 01:44:36,689	INFO logging_progress.py:231 -- Repartition: 0/1
+2026-11-18 01:44:36,689	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (119.6MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
+2026-11-18 01:44:36,689	INFO logging_progress.py:231 --     - Split Repartition: 0/1
+2026-11-18 01:44:36,689	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
+2026-11-18 01:44:36,689	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
+2026-11-18 01:44:36,689	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
+2026-11-18 01:44:36,689	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
+2026-11-18 01:44:36,690	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
+2026-11-18 01:44:36,690	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
+2026-11-18 01:44:36,690	INFO logging_progress.py:231 --     - Map: 0/1
+2026-11-18 01:44:36,690	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
+2026-11-18 01:44:36,690	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
+2026-11-18 01:44:36,690	INFO logging_progress.py:231 --     - Reduce: 0/1
+2026-11-18 01:44:36,690	INFO logging_progress.py:192 -- =================================================================
+2026-11-18 01:44:43,265	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkJaRxKxFicuiFXSpP_0 execution finished in 6.58 seconds
+2026-11-18 01:44:44,813	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkWMoYhHvumIN1J3rz_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:44,813	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkWMoYhHvumIN1J3rz_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
+2026-11-18 01:44:44,817	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034zFkWMoYhHvumIN1J3rz_0 =======
+2026-11-18 01:44:44,817	INFO logging_progress.py:225 -- Total Progress: 0/?
+2026-11-18 01:44:44,818	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
+2026-11-18 01:44:44,818	INFO logging_progress.py:181 -- 
+2026-11-18 01:44:44,818	INFO logging_progress.py:231 -- Repartition: 0/1
+2026-11-18 01:44:44,818	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (7.6MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
+2026-11-18 01:44:44,818	INFO logging_progress.py:231 --     - Split Repartition: 0/1
+2026-11-18 01:44:44,818	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
+2026-11-18 01:44:44,818	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
+2026-11-18 01:44:44,818	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
+2026-11-18 01:44:44,818	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
+2026-11-18 01:44:44,818	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
+2026-11-18 01:44:44,818	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
+2026-11-18 01:44:44,818	INFO logging_progress.py:231 --     - Map: 0/1
+2026-11-18 01:44:44,818	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
+2026-11-18 01:44:44,818	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
+2026-11-18 01:44:44,818	INFO logging_progress.py:231 --     - Reduce: 0/1
+2026-11-18 01:44:44,818	INFO logging_progress.py:192 -- =================================================================
+2026-11-18 01:44:48,723	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkWMoYhHvumIN1J3rz_0 execution finished in 3.91 seconds
+2026-11-18 01:44:49,881	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkeKrYYQdI9lBpornT_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:49,881	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkeKrYYQdI9lBpornT_0: InputDataBuffer[Input] -> AllToAllOperator[Repartition] -> TaskPoolMapOperator[MapBatches(FeatureProcessor.transform)] -> SortSamplingOp[SortSample(partitions=8)] -> SortShuffleMapOp[SortShuffleMap(partitions=8)] -> ShuffleReduceOp[SortShuffleReduce(partitions=8)->MapBatches(drop_columns)]
+2026-11-18 01:44:49,885	INFO logging_progress.py:174 -- ======= Running Dataset: dataset_034zFkeKrYYQdI9lBpornT_0 =======
+2026-11-18 01:44:49,885	INFO logging_progress.py:225 -- Total Progress: 0/?
+2026-11-18 01:44:49,885	INFO logging_progress.py:227 -- Active & requested resources: 0/0 CPU, 0.0B/0.0B object store
+2026-11-18 01:44:49,885	INFO logging_progress.py:181 -- 
+2026-11-18 01:44:49,885	INFO logging_progress.py:231 -- Repartition: 0/1
+2026-11-18 01:44:49,886	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 1 (139.1MiB); Resources: 0.0 CPU, 0.0B object store; 0 rows output
+2026-11-18 01:44:49,886	INFO logging_progress.py:231 --     - Split Repartition: 0/1
+2026-11-18 01:44:49,886	INFO logging_progress.py:231 -- MapBatches(FeatureProcessor.transform): 0/1
+2026-11-18 01:44:49,886	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store
+2026-11-18 01:44:49,886	INFO logging_progress.py:231 -- SortSample(partitions=8): 0/1
+2026-11-18 01:44:49,886	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; sample: 0/0
+2026-11-18 01:44:49,886	INFO logging_progress.py:231 -- SortShuffleMap(partitions=8): 0/1
+2026-11-18 01:44:49,886	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; map: 0/0
+2026-11-18 01:44:49,886	INFO logging_progress.py:231 --     - Map: 0/1
+2026-11-18 01:44:49,886	INFO logging_progress.py:231 -- SortShuffleReduce(partitions=8)->MapBatches(drop_columns): 0/1
+2026-11-18 01:44:49,886	INFO logging_progress.py:233 --   Tasks: 0; Actors: 0; Queued blocks: 0 (0.0B); Resources: 0.0 CPU, 0.0B object store; reduce: 0/0
+2026-11-18 01:44:49,886	INFO logging_progress.py:231 --     - Reduce: 0/1
+2026-11-18 01:44:49,886	INFO logging_progress.py:192 -- =================================================================
+2026-11-18 01:44:56,656	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkeKrYYQdI9lBpornT_0 execution finished in 6.77 seconds
+2026-11-18 01:44:57,364	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkq6A2BjM4wuaKrv3D_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:57,364	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkq6A2BjM4wuaKrv3D_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:44:57,364	WARNING __init__.py:28 -- Progress bars disabled. To enable, set `ray.data.DataContext.get_current().enable_progress_bars = True`.
+2026-11-18 01:44:58,348	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkq6A2BjM4wuaKrv3D_0 execution finished in 0.98 seconds
+2026-11-18 01:44:58,353	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkreiiixwLbmJJ5zUo_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:58,353	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkreiiixwLbmJJ5zUo_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:44:58,382	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkreiiixwLbmJJ5zUo_0 execution finished in 0.03 seconds
+2026-11-18 01:44:58,447	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkq6FSTQ0ppNt5FwxX_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:44:58,447	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkq6FSTQ0ppNt5FwxX_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:44:59,345	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkq6FSTQ0ppNt5FwxX_0 execution finished in 0.90 seconds
+2026-11-18 01:45:00,479	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkrei0LZ2OUP1gMToF_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:00,479	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkrei0LZ2OUP1gMToF_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:00,925	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkrei0LZ2OUP1gMToF_0 execution finished in 0.45 seconds
+2026-11-18 01:45:00,967	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkq6FSTQ0ppNt5FwxX_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:00,967	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkq6FSTQ0ppNt5FwxX_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:01,756	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkq6FSTQ0ppNt5FwxX_1 execution finished in 0.79 seconds
+2026-11-18 01:45:02,893	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkrei0LZ2OUP1gMToF_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:02,893	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkrei0LZ2OUP1gMToF_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:03,377	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkrei0LZ2OUP1gMToF_1 execution finished in 0.48 seconds
+2026-11-18 01:45:03,413	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkzborg14l7rYXEIat_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:03,413	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkzborg14l7rYXEIat_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:03,443	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkzborg14l7rYXEIat_0 execution finished in 0.03 seconds
+2026-11-18 01:45:03,447	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFkzbqGn1C2A6AkCX9s_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:03,447	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFkzbqGn1C2A6AkCX9s_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:04,217	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFkzbqGn1C2A6AkCX9s_0 execution finished in 0.77 seconds
+2026-11-18 01:45:04,691	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFl1cSAjzZz7Ypy1Rkz_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:04,691	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFl1cSAjzZz7Ypy1Rkz_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:04,720	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFl1cSAjzZz7Ypy1Rkz_0 execution finished in 0.03 seconds
+2026-11-18 01:45:04,727	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFl1fniwx3HV9wwRtUb_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:04,727	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFl1fniwx3HV9wwRtUb_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:04,758	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFl1fniwx3HV9wwRtUb_0 execution finished in 0.03 seconds
+2026-11-18 01:45:04,777	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFl1cTXksdbuh6avfjL_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:04,777	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFl1cTXksdbuh6avfjL_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:05,208	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFl1cTXksdbuh6avfjL_0 execution finished in 0.43 seconds
+2026-11-18 01:45:06,426	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFl1fpGBme8CXkkMROU_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:06,426	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFl1fpGBme8CXkkMROU_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:06,844	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFl1fpGBme8CXkkMROU_0 execution finished in 0.42 seconds
+2026-11-18 01:45:06,886	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFl1cTXksdbuh6avfjL_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:06,886	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFl1cTXksdbuh6avfjL_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:07,819	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFl1cTXksdbuh6avfjL_1 execution finished in 0.93 seconds
+2026-11-18 01:45:09,025	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFl1fpGBme8CXkkMROU_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:09,025	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFl1fpGBme8CXkkMROU_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:09,452	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFl1fpGBme8CXkkMROU_1 execution finished in 0.43 seconds
+2026-11-18 01:45:09,489	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFl9A8qKh5yCD7Nr0c2_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:09,489	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFl9A8qKh5yCD7Nr0c2_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:09,518	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFl9A8qKh5yCD7Nr0c2_0 execution finished in 0.03 seconds
+2026-11-18 01:45:09,522	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFl9AAi0CSUZztRArd9_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:09,522	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFl9AAi0CSUZztRArd9_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:10,359	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFl9AAi0CSUZztRArd9_0 execution finished in 0.84 seconds
+2026-11-18 01:45:10,864	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlBKCWYIGafJHwfuPo_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:10,864	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlBKCWYIGafJHwfuPo_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:10,895	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlBKCWYIGafJHwfuPo_0 execution finished in 0.03 seconds
+2026-11-18 01:45:10,901	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlBNmhckFJ9pHGv1nd_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:10,901	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlBNmhckFJ9pHGv1nd_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:10,927	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlBNmhckFJ9pHGv1nd_0 execution finished in 0.03 seconds
+2026-11-18 01:45:10,948	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlBK8YPBkFdWU2GSDW_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:10,948	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlBK8YPBkFdWU2GSDW_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:11,384	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlBK8YPBkFdWU2GSDW_0 execution finished in 0.44 seconds
+2026-11-18 01:45:13,040	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlBNoxP5w3g8ZZOldC_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:13,040	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlBNoxP5w3g8ZZOldC_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:13,957	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlBNoxP5w3g8ZZOldC_0 execution finished in 0.92 seconds
+2026-11-18 01:45:14,019	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlBK8YPBkFdWU2GSDW_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:14,019	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlBK8YPBkFdWU2GSDW_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:14,793	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlBK8YPBkFdWU2GSDW_1 execution finished in 0.77 seconds
+2026-11-18 01:45:16,448	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlBNoxP5w3g8ZZOldC_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:16,448	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlBNoxP5w3g8ZZOldC_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:17,299	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlBNoxP5w3g8ZZOldC_1 execution finished in 0.85 seconds
+2026-11-18 01:45:17,345	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlLVwAsYJPuXCLS1dk_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:17,345	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlLVwAsYJPuXCLS1dk_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:17,373	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlLVwAsYJPuXCLS1dk_0 execution finished in 0.03 seconds
+2026-11-18 01:45:17,376	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlLVxCtAoiB4O9sNSb_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:17,376	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlLVxCtAoiB4O9sNSb_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:18,143	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlLVxCtAoiB4O9sNSb_0 execution finished in 0.77 seconds
+2026-11-18 01:45:18,865	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlNuARB9d7XBfMUuSY_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:18,866	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlNuARB9d7XBfMUuSY_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:18,893	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlNuARB9d7XBfMUuSY_0 execution finished in 0.03 seconds
+2026-11-18 01:45:18,899	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlNxO4IqAWbkie1r1D_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:18,899	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlNxO4IqAWbkie1r1D_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:18,925	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlNxO4IqAWbkie1r1D_0 execution finished in 0.03 seconds
+2026-11-18 01:45:18,945	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlNu8DRUvn9RbLcys2_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:18,945	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlNu8DRUvn9RbLcys2_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:19,402	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlNu8DRUvn9RbLcys2_0 execution finished in 0.46 seconds
+2026-11-18 01:45:24,140	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlNxQntcjbK5RyUd6r_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:24,141	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlNxQntcjbK5RyUd6r_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:25,006	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlNxQntcjbK5RyUd6r_0 execution finished in 0.87 seconds
+2026-11-18 01:45:25,141	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlNu8DRUvn9RbLcys2_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:25,141	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlNu8DRUvn9RbLcys2_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:25,936	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlNu8DRUvn9RbLcys2_1 execution finished in 0.79 seconds
+2026-11-18 01:45:30,842	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFlNxQntcjbK5RyUd6r_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:30,842	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFlNxQntcjbK5RyUd6r_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:31,796	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFlNxQntcjbK5RyUd6r_1 execution finished in 0.95 seconds
+2026-11-18 01:45:31,922	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFliQvy8QwMG83EVAoD_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:31,922	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFliQvy8QwMG83EVAoD_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:31,955	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFliQvy8QwMG83EVAoD_0 execution finished in 0.03 seconds
+2026-11-18 01:45:31,958	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFliQuQud7WbdYevEeR_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:31,958	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFliQuQud7WbdYevEeR_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:32,693	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFliQuQud7WbdYevEeR_0 execution finished in 0.73 seconds
+2026-11-18 01:45:34,892	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFln6R93HudASeEM3ZH_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:34,892	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFln6R93HudASeEM3ZH_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:34,918	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFln6R93HudASeEM3ZH_0 execution finished in 0.03 seconds
+2026-11-18 01:45:34,923	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFln9POzLiU8oAuwida_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:34,923	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFln9POzLiU8oAuwida_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:45:34,949	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFln9POzLiU8oAuwida_0 execution finished in 0.03 seconds
+2026-11-18 01:45:34,973	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFln6RArcWIB8Vp5tqm_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:34,973	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFln6RArcWIB8Vp5tqm_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:35,866	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFln6RArcWIB8Vp5tqm_0 execution finished in 0.89 seconds
+2026-11-18 01:45:43,921	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:43,921	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:44,797	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_0 execution finished in 0.88 seconds
+2026-11-18 01:45:45,002	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFln6RArcWIB8Vp5tqm_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:45,002	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFln6RArcWIB8Vp5tqm_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:45,743	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFln6RArcWIB8Vp5tqm_1 execution finished in 0.74 seconds
+2026-11-18 01:45:53,836	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_1. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:53,836	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_1: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:54,696	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_1 execution finished in 0.86 seconds
+2026-11-18 01:45:54,903	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFln6RArcWIB8Vp5tqm_2. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:45:54,903	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFln6RArcWIB8Vp5tqm_2: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:45:55,554	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFln6RArcWIB8Vp5tqm_2 execution finished in 0.65 seconds
+2026-11-18 01:46:03,659	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_2. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:46:03,659	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_2: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:46:04,591	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFln9RF8Rt9Zqk2pFp8_2 execution finished in 0.93 seconds
+2026-11-18 01:46:04,787	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFmY6Vv3CGiQv1CqO4B_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:46:04,787	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFmY6Vv3CGiQv1CqO4B_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[MapBatches(count_rows)]
+2026-11-18 01:46:04,815	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFmY6Vv3CGiQv1CqO4B_0 execution finished in 0.03 seconds
+2026-11-18 01:46:04,819	INFO streaming_executor.py:215 -- Starting execution of Dataset dataset_034zFmY6WV9J2pSp6PlUmx_0. Full logs are in /tmp/ray/session_2026-11-18_01-43-52_216746_85594/logs/ray-data
+2026-11-18 01:46:04,819	INFO streaming_executor.py:216 -- Execution plan of Dataset dataset_034zFmY6WV9J2pSp6PlUmx_0: InputDataBuffer[Input] -> TaskPoolMapOperator[ListFiles] -> TaskPoolMapOperator[ReadFilesParquetV2]
+2026-11-18 01:46:05,458	INFO streaming_executor.py:371 -- ✔️  Dataset dataset_034zFmY6WV9J2pSp6PlUmx_0 execution finished in 0.64 seconds
